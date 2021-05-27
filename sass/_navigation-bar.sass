@@ -1,0 +1,32 @@
+.menu-toggle
+  line-height: 50px
+  font-size: 24px
+  cursor: pointer
+  display: block
+.navigation
+  &_bar
+    background-color: #ffffff
+    height: 61px
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &_bar-logo
+    width: 100%
+    max-width: 75px
+  &_bar-logo-image
+    width: 100%
+    max-width: 75px
+    height: 18px
+  &_bar-item
+    max-width: 470px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    @media (max-width: 768px)
+      display: none
+
+  &_bar-item-link
+    text-decoration: none
+    font-size: 14px
+    color: #383838
+
