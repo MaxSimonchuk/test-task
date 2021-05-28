@@ -1,4 +1,4 @@
-$('#header-tabs .section-tabs_headings-link').on('click', (e) => {
+$('#header-tabs, #header-tabs-mobile .section-tabs_headings-link').on('click', (e) => {
        let panelIndex = $(e.target).data('headingTabIndex');
 
        // handle panels

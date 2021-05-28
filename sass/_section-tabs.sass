@@ -20,6 +20,16 @@
     display: flex
     justify-content: space-between
     margin: 0 auto 38px
+    @media (max-width: 760px)
+      display: none
+      margin: 0
+  .slide-mobile
+    display: none
+    @media (max-width: 760px)
+      display: block
+    @media (max-width: 760px)
+      display: flex
+      justify-content: center
   &_headings-link
     font-family: TTNorms
     font-size: 20px
@@ -27,6 +37,12 @@
     text-align: center
     color: #ababab
     cursor: pointer
+    @media (max-width: 760px)
+      width: 8px
+      height: 8px
+      margin: 0 10px 0 0
+      border-radius: 50%
+      background-color: #9a9a9a
   .active, &_headings-link:hover
     color: #4b94c6
   &_container-panels
@@ -40,12 +56,30 @@
     justify-content: space-between
     border-radius: 3px
     box-shadow: 0 0 44px 10px #dedede
+    @media (max-width: 960px)
+      padding: 22px 21px 25px 21px
+    @media (max-width: 760px)
+      padding: 22px 21px 33px 21px
+      margin: 0 0 20px 0
   &_block-description
     width: 100%
     max-width: 372px
+    @media (max-width: 760px)
+      max-width: 100%
+  &_main-content
+    @media (max-width: 1024px)
+      margin-right: 50px
+    @media (max-width: 1024px)
+      margin-right: 0
   &_block-description-title
     font-size: 24px
     line-height: 1.33
+    @media (max-width: 760px)
+      text-align: center
+      margin: 0 auto 24px
+    @media (max-width: 480px)
+      width: 40%
+      text-align: center
   &_block-description-text
     font-size: 16px
     line-height: 1.63
@@ -59,6 +93,24 @@
     width: 100%
     max-width: 415px
     height: 415px
+    @media (max-width: 1024px)
+      max-width: 100%
+      width: 415px
+      height: auto
+    @media (max-width: 760px)
+      display: none
+      width: 100%
+  .tab-mobile
+    display: none
+    @media (max-width: 760px)
+      display: block
+      max-width: 100%
+      padding: 0 11px
+      box-sizing: border-box
+      //margin: 11px auto 24px
+      height: auto
+      .section-tabs_block-circle-image
+        display: block
 
 
 
