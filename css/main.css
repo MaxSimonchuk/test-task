@@ -26,13 +26,13 @@
     border-bottom: 1px solid #ffffff;
     text-decoration: none; }
 
-.main-title {
+.title {
   font-family: TTNorms;
   font-weight: bold;
   line-height: 1.18;
   color: #363636; }
 
-.main-text {
+.subtitle {
   font-family: TTNorms;
   font-size: 16px;
   line-height: 1.63;
