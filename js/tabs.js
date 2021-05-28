@@ -38,7 +38,7 @@ function handleDropdown(parent) {
 }
 
 $('.nav-menu').on('click', function() {
-    $('#nav-item').toggleClass('active');
+    $('#nav-item').toggleClass('active-menu');
 });
 
 // handleDropdown('#future-panels');

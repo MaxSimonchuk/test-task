@@ -87,7 +87,9 @@
         height: 8px;
         margin: 0 10px 0 0;
         border-radius: 50%;
-        background-color: #9a9a9a; } }
+        background-color: #dfdfdf; }
+        .section-tabs_headings-link_headings-link:hover {
+          color: #9a9a9a; } }
   .section-tabs .active, .section-tabs_headings-link:hover {
     color: #4b94c6; }
   .section-tabs_container-panels {
@@ -277,7 +279,7 @@
       display: block; } }
 
 .navigation_bar-block-desktop {
-  max-width: 540px;
+  max-width: 480px;
   width: 100%;
   display: flex;
   justify-content: space-between; }
@@ -289,7 +291,7 @@
   max-width: 470px;
   width: 100%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-around; }
   @media (max-width: 768px) {
     .navigation_bar-item {
       display: none;
@@ -299,7 +301,6 @@
       opacity: 1;
       top: 100px;
       left: 0;
-      transition: 0.9s;
       max-width: 100%;
       padding: 0 15px;
       box-sizing: border-box; } }
@@ -341,7 +342,7 @@
 @media (max-width: 760px) {
   .nav-menu {
     display: block; }
-  .active {
+  .active-menu {
     display: block;
     visibility: visible; } }
 
