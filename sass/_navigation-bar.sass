@@ -1,8 +1,3 @@
-.menu-toggle
-  line-height: 50px
-  font-size: 24px
-  cursor: pointer
-  display: block
 .navigation
   &_bar
     background-color: #ffffff
@@ -17,6 +12,17 @@
     width: 100%
     max-width: 75px
     height: 18px
+  &_bar-burger-icon
+    display: none
+    @media (max-width: 768px)
+      display: block
+  &_bar-block-desktop
+    max-width: 540px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    @media (max-width: 768px)
+      max-width: 1px
   &_bar-item
     max-width: 470px
     width: 100%
@@ -24,9 +30,41 @@
     justify-content: space-between
     @media (max-width: 768px)
       display: none
-
+      position: absolute
+      width: 100%
+      height: 300px
+      opacity: 1
+      top: 100px
+      left: 0
+      transition: 0.9s
+      max-width: 100%
+      padding: 0 15px
+      box-sizing: border-box
   &_bar-item-link
     text-decoration: none
     font-size: 14px
     color: #383838
-
+    @media (max-width: 760px)
+      border-bottom: 1px solid #ffffff
+      background-color: #e9e9e9
+      transition: 0.5s
+      height: 50px
+      border-radius: 5px
+      display: flex
+      align-items: center
+      justify-content: center
+      cursor: pointer
+      &:hover
+        background-color: #a0c5db
+  &_bar-item-basket
+    max-width: 27px
+    width: 100%
+    height: 20px
+.nav-menu
+  display: none
+@media (max-width: 760px)
+  .nav-menu
+    display: block
+  .active
+    display: block
+    visibility: visible

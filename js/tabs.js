@@ -37,6 +37,10 @@ function handleDropdown(parent) {
     });
 }
 
+$('.nav-menu').on('click', function() {
+    $('#nav-item').toggleClass('active');
+});
+
 // handleDropdown('#future-panels');
 
 // $('.section-future_tab-title').click(function() {
