@@ -168,7 +168,8 @@
     justify-content: space-between; }
   .section-future_tab-paragraph {
     font-size: 16px;
-    color: #383838; }
+    color: #383838;
+    margin: 0 0 24px 0; }
   .section-future_tab-line {
     border-bottom: 1px solid #d7d7d7;
     margin: 22px 0 22px 0; }
@@ -315,14 +316,14 @@
       margin-right: 0; } }
   .block-description-panel_title {
     width: 100%;
-    margin: 0 auto 9px; }
+    margin: 0 auto 20px; }
     @media (max-width: 760px) {
       .block-description-panel_title {
         margin: 0 auto 24px; } }
   .block-description-panel_text {
     width: 100%;
     max-width: 365px;
-    margin: 0 auto 39px; }
+    margin: 0 auto 38px; }
     @media (max-width: 760px) {
       .block-description-panel_text {
         max-width: 100%; } }
