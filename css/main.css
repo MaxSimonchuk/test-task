@@ -115,7 +115,8 @@
     line-height: 1.33; }
     @media (max-width: 760px) {
       .section-bringing_block-description-title {
-        text-align: center; } }
+        text-align: center;
+        font-size: 24px; } }
   .section-bringing_block-circle {
     width: 100%;
     max-width: 415px;
@@ -336,9 +337,6 @@
     @media (max-width: 760px) {
       .block-description-panel_title {
         margin: 0 auto 24px; } }
-    @media (max-width: 600px) {
-      .block-description-panel_title {
-        font-size: 28px; } }
   .block-description-panel_text {
     width: 100%;
     max-width: 365px;
