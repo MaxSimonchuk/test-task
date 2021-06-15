@@ -9,244 +9,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://fonts.hlxcdn.com/fonts/fonts.css" >
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-<section class="announcement-bar">
-    <div class="wrapper">
-        <div class="announcement-bar_description">
-            <p class="announcement-bar_text-updated">
+<header class="header">
+    <section class="header_polices-bar">
+        <div class="header_polices-bar-wrapper">
+            <p class="header_polices-bar-text">
                 We’ve updated our policies.
             </p>
-            <a href="#" class="announcement-bar_text-learn">
+            <a href="#" class="header_polices-bar-link">
                 Learn more
             </a>
         </div>
-    </div>
-</section>
-<header class="navigation">
-    <div class="wrapper">
-        <nav class="navigation_bar">
-            <div class="navigation_bar-burger-icon">
-                <a id="nav-menu" class="nav-menu ">&#9776; </a>
-            </div>
-            <div class="navigation_bar-logo">
-                <img src="img/navigation-bar/logo.png" class="navigation_bar-logo-image" alt="Logo">
-            </div>
-            <div class="navigation_bar-block-desktop">
-                <ul class="navigation_bar-item" id="nav-item">
-                   <li><a class="navigation_bar-item-link block-subtitle" href="#">Population Health</a> </li>
-                    <li><a class="navigation_bar-item-link block-subtitle" href="#">DNA Tests</a></li>
-                    <li><a class="navigation_bar-item-link block-subtitle" href="#">Register Kit</a></li>
-                    <li><a class="navigation_bar-item-link block-subtitle" href="#">Sign In</a></li>
-                </ul>
-                <div class="navigation_bar-item-basket">
-                    <img class="navigation_bar-basket-image" src="img/navigation-bar/cart-icon.svg" alt="image basket">
-                </div>
-            </div>
-        </nav>
-    </div>
+    </section>
+    <nav class="main-nav wrapper">
+        <a class="main-nav_burger ">&#9776; </a>
+        <div class="main-nav_logo-wrapper">
+            <img src="img/navigation-bar/logo.png" class="main-nav_logo" alt="Logo">
+        </div>
+        <ul class="main-nav_desktop" id="nav-item">
+            <li class="main-nav_item">
+                <a class="main-nav_item-link subtitle" href="#">Population Health</a>
+            </li>
+            <li class="main-nav_item">
+                <a class="main-nav_item-link subtitle" href="#">DNA Tests</a>
+            </li>
+            <li class="main-nav_item">
+                <a class="main-nav_item-link subtitle" href="#">Register Kit</a>
+            </li>
+            <li class="main-nav_item">
+                <a class="main-nav_item-link subtitle" href="#">Sign In</a>
+            </li>
+        </ul>
+        <div class="basket-wrapper">
+            <img class="basket-wrapper_image" src="img/navigation-bar/cart-icon.svg" alt="image basket">
+        </div>
+    </nav>
 </header>
-<section class="section-bringing">
-    <div class="wrapper">
-        <h2 class="section-bringing_title block-title">
+
+<main class="main">
+    <section class="bringing wrapper">
+        <h2 class="bringing_title title">
             Bringing the benefits of multiple assays into one
         </h2>
-        <p class="block-subtitle section-bringing_text">
+        <p class="bringing_description description">
             Helix’s Exome+® assay has been carefully optimized to provide the benefits of lcWGS,
             whole exome sequencing, microarrays, and targeted panels — all in one assay.
         </p>
-        <div id='header-tabs' class="section-bringing_box-headings">
-            <h4 class="section-bringing_headings-link active" data-heading-tab-index="1">
+        <ul class="bringing_list">
+            <li class="bringing_list-item bringing_list-item-active">
                 Targeted Panels
-            </h4>
-            <h4 class="section-bringing_headings-link" data-heading-tab-index="2">
+            </li>
+            <li class="bringing_list-item">
                 Whole Exome Sequencing
-            </h4>
-            <h4 class="section-bringing_headings-link" data-heading-tab-index="3">
+            </li>
+            <li class="bringing_list-item">
                 lcWGS and Microarrays
-            </h4>
-        </div>
-        <div id='header-panels' class="section-bringing_container-panel container">
-            <div class="section-bringing_block-description block-description-panel" data-heading-panel-index="1" >
-                <div class="section-bringing_main-content block-description-panel_content">
-                    <h6 class="section-bringing_block-description-title block-title block-description-panel_title">
-                        Targeted Panels
-                    </h6>
-                    <div class="section-bringing_block-circle tab-mobile" data-heading-image-index="1">
-                        <img src="img/section-bringing/Oval.png" class="section-bringing_block-circle-image" alt="Oval">
-                    </div>
-                    <p class="section-bringing_block-description-text block-subtitle block-description-panel_text">
-                        Panels are often used in clinical settings because they’re low cost and provide high quality
-                        coverage
-                        of specific, pre-defined genomic regions of interest. While useful in certain settings,
-                        such assays are limited by their narrow focus.
-                    </p>
-                    <p class="section-bringing_block-description-text block-subtitle block-description-panel_text">
-                        With ≥ 99.5% call rate across ~600 genes relevant
-                        to many disease states, the Exome+ assay enables you to run multiple panel-grade analyses
-                        with a single sample.
-                    </p>
+            </li>
+        </ul>
+        <div class="bringing_panel">
+            <div class="bringing_panel-item">
+                <h3 class="bringing_panel-item-title title">
+                    Targeted Panels
+                </h3>
+                <div class="bringing_panel-image-wrapper">
+                    <img src="img/section-bringing/Oval.png" class="bringing_panel-image" alt="Oval">
                 </div>
+                <p class="bringing_panel-description description">
+                    Panels are often used in clinical settings because they’re low cost and provide high quality
+                    coverage
+                    of specific, pre-defined genomic regions of interest. While useful in certain settings,
+                    such assays are limited by their narrow focus.
+                </p>
+                <p class="bringing_panel-description description">
+                    With ≥ 99.5% call rate across ~600 genes relevant
+                    to many disease states, the Exome+ assay enables you to run multiple panel-grade analyses
+                    with a single sample.
+                </p>
             </div>
-            <div class="section-bringing_block-description block-description-panel" data-heading-panel-index="2" hidden="true">
-                <div class="section-bringing_main-content block-description-panel_content">
-                    <h6 class="section-bringing_block-description-title block-title block-description-panel_title">
-                        Whole Exome Sequencing
-                    </h6>
-                    <div class="section-bringing_block-circle tab-mobile" data-heading-image-index="2" hidden="true">
-                        <img src="img/section-bringing/Oval2.png" class="section-bringing_block-circle-image" alt="Oval-2">
-                    </div>
-                    <p class="section-bringing_block-description-text block-subtitle block-description-panel_text">
-                        Panels are often used in clinical settings because they’re low cost and provide high quality
-                        coverage
-                        of specific, pre-defined genomic regions of interest. While useful in certain settings,
-                        such assays are limited by their narrow focus.
-                    </p>
-                    <p class="section-bringing_block-description-text block-subtitle block-description-panel_text">
-                        With ≥ 99.5% call rate across ~600 genes relevant
-                        to many disease states, the Exome+ assay enables you to run multiple panel-grade analyses
-                        with a single sample.
-                    </p>
+            <div class="bringing_panel-item">
+                <h3 class="bringing_panel-item-title title">
+                    Whole Exome Sequencing
+                </h3>
+                <div class="bringing_panel-image-wrapper">
+                    <img src="img/section-bringing/Oval2.png" class="bringing_panel-image" alt="Oval-2">
                 </div>
+                <p class="bringing_panel-description description">
+                    Panels are often used in clinical settings because they’re low cost and provide high quality
+                    coverage
+                    of specific, pre-defined genomic regions of interest. While useful in certain settings,
+                    such assays are limited by their narrow focus.
+                </p>
+                <p class="bringing_panel-description description">
+                    With ≥ 99.5% call rate across ~600 genes relevant
+                    to many disease states, the Exome+ assay enables you to run multiple panel-grade analyses
+                    with a single sample.
+                </p>
             </div>
-            <div class="section-bringing_block-description block-description-panel" data-heading-panel-index="3" hidden="true">
-                <div class="section-bringing_main-content block-description-panel_content">
-                    <h6 class="section-bringing_block-description-title block-title block-description-panel_title">
-                        lcWGS and Microarrays
-                    </h6>
-                    <div class="section-bringing_block-circle tab-mobile" data-heading-image-index="3" hidden="true">
-                        <img src="img/section-bringing/Oval3.png" class="section-bringing_block-circle-image" alt="Oval-3">
-                    </div>
-                    <p class="section-bringing_block-description-text block-subtitle block-description-panel_text">
-                        Panels are often used in clinical settings because they’re low cost and provide high quality
-                        coverage
-                        of specific, pre-defined genomic regions of interest. While useful in certain settings,
-                        such assays are limited by their narrow focus.
-                    </p>
-                    <p class="section-bringing_block-description-text block-subtitle block-description-panel_text">
-                        With ≥ 99.5% call rate across ~600 genes relevant
-                        to many disease states, the Exome+ assay enables you to run multiple panel-grade analyses
-                        with a single sample.
-                    </p>
+            <div class="bringing_panel-item">
+                <h3 class="bringing_panel-item-title title">
+                    Whole Exome Sequencing
+                </h3>
+                <div class="bringing_panel-image-wrapper">
+                    <img src="img/section-bringing/Oval2.png" class="bringing_panel-image" alt="Oval-2">
                 </div>
-            </div>
-            <div id="change-image">
-                <div class="section-bringing_block-circle" data-heading-image-index="1">
-                    <img src="img/section-bringing/Oval.png" class="section-bringing_block-circle-image" alt="Oval">
-                </div>
-                <div class="section-bringing_block-circle" data-heading-image-index="2" hidden="true">
-                    <img src="img/section-bringing/Oval2.png" class="section-bringing_block-circle-image" alt="Oval-2">
-                </div>
-                <div class="section-bringing_block-circle" data-heading-image-index="3" hidden="true">
-                    <img src="img/section-bringing/Oval3.png" class="section-bringing_block-circle-image" alt="Oval-3">
-                </div>
-            </div>
-        </div>
-        <div id='header-tabs-mobile' class="section-bringing_box-headings slide-mobile">
-            <p class="section-bringing_headings-link active" data-heading-tab-index="1">
-            </p>
-            <p class="section-bringing_headings-link" data-heading-tab-index="2">
-            </p>
-            <p class="section-bringing_headings-link" data-heading-tab-index="3">
-            </p>
-        </div>
-    </div>
-</section>
-    <section class="section-future">
-        <div class="wrapper">
-           <h2 class="section-future_title block-title">
-               A future proofed assay
-           </h2>
-           <p class="section-future_paragraph block-subtitle">
-               There are several advantages to running panels in the presence of a whole exome,
-               including flexible test design, flexible re-testing, and increased functionality.
-           </p>
-            <div id="future-tab" class="section-future_tab">
-                <div id="future-panels" class="section-future_tab-panel">
-                    <div class="section-future_tab-description block-description-panel">
-                        <div class="section-future_tab-block-swype block-description-panel_content active-drop">
-                            <h2 class="section-future_tab-title block-title  block-description-panel_title" data-future-tab-index="1">
-                                Flexible test design
-                            </h2>
-                            <div class="section-future_tab-arrow-block">
-                                <img class="section-future_tab-arrow-image section-future_tab-arrow-image_active" src="img/section-future/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                        <div class="section-future_tab-main-content" data-future-panel-index="1">
-                            <div class="section-future_tab-content image-mobile" data-future-image-index="1">
-                                <img src="img/section-future/1.png" class="section-future_tab-content-image" alt="Group">
-                            </div>
-                            <p class="section-future_tab-paragraph block-subtitle block-description-panel_text">
-                                The Exome+ assay provides the flexibility needed to build a comprehensive panel that
-                                can be expanded over time. With ~20,000 genes sequenced in each sample, every gene becomes
-                                a candidate for inclusion. And, while we have ensured the highest call rates across those
-                                genes that are most likely to belong to a panel,
-                                the Exome+ assay delivers high call rates   for all genes beyond this core set.
-                            </p>
-                        </div>
-                        <div class="section-future_tab-line"></div>
-                    </div>
-                    <div class="section-future_tab-description block-description-panel">
-                        <div class="section-future_tab-block-swype block-description-panel_content">
-                            <h2 class="section-future_tab-title block-title block-description-panel_title" data-future-tab-index="2">
-                                Sequence once, query often
-                            </h2>
-                            <div class="section-future_tab-arrow-block">
-                                <img class="section-future_tab-arrow-image" src="img/section-future/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                        <div class="section-future_tab-main-content " data-future-panel-index="2" hidden="true">
-                            <div class="section-future_tab-content image-mobile" data-future-image-index="2" hidden="true">
-                                <img src="img/section-future/2.png" class="section-future_tab-content-image" alt="Group">
-                            </div>
-                            <p class="section-future_tab-paragraph block-subtitle block-description-panel_text">
-                                The Exome+ assay provides the flexibility needed to build a comprehensive panel that
-                                can be expanded over time. With ~20,000 genes sequenced in each sample, every gene becomes
-                                a candidate for inclusion. And, while we have ensured the highest call rates across those
-                                genes that are most likely to belong to a panel,
-                            </p>
-                        </div>
-                        <div class="section-future_tab-line"></div>
-                    </div>
-                    <div class="section-future_tab-description block-description-panel">
-                        <div class="section-future_tab-block-swype block-description-panel_content">
-                            <h2 class="section-future_tab-title block-title block-description-panel_title" data-future-tab-index="3">
-                                Comprehensive PGx
-                            </h2>
-                            <div class="section-future_tab-arrow-block">
-                                <img class="section-future_tab-arrow-image" src="img/section-future/arrow.png" alt="arrow">
-                            </div>
-                        </div>
-                        <div class="section-future_tab-main-content" data-future-panel-index="3" hidden="true">
-                            <div class="section-future_tab-content image-mobile" data-future-image-index="3" hidden="true">
-                                <img src="img/section-future/3.png" class="section-future_tab-content-image" alt="Group">
-                            </div>
-                            <p class="section-future_tab-paragraph block-subtitle ">
-                                The Exome+ assay provides the flexibility needed to build a comprehensive panel that
-                                can be expanded over time. With ~20,000 genes sequenced in each sample, every gene becomes
-                                a candidate for inclusion. And, while we have ensured the highest call rates across those
-                                genes that are most likely to belong to a panel,
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div id="change-img">
-                    <div class="section-future_tab-content" data-future-image-index="1">
-                        <img src="img/section-future/1.png" class="section-future_tab-content-image" alt="Group">
-                    </div>
-                    <div class="section-future_tab-content" data-future-image-index="2" hidden="true">
-                        <img src="img/section-future/2.png" class="section-future_tab-content-image" alt="Group">
-                    </div>
-                    <div class="section-future_tab-content" data-future-image-index="3" hidden="true">
-                        <img src="img/section-future/3.png" class="section-future_tab-content-image" alt="Group">
-                    </div>
-                </div>
-
+                <p class="bringing_panel-description description">
+                    Panels are often used in clinical settings because they’re low cost and provide high quality
+                    coverage
+                    of specific, pre-defined genomic regions of interest. While useful in certain settings,
+                    such assays are limited by their narrow focus.
+                </p>
+                <p class="bringing_panel-description description">
+                    With ≥ 99.5% call rate across ~600 genes relevant
+                    to many disease states, the Exome+ assay enables you to run multiple panel-grade analyses
+                    with a single sample.
+                </p>
             </div>
         </div>
     </section>
+    <section class="future">
 
+    </section>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/tabs.js" type="application/javascript"></script>
 </body>
 </html>
