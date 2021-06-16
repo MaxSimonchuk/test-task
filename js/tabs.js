@@ -44,8 +44,8 @@ function activeTitle() {
 activeTitle();
 
 function clickMobileMenu() {
-    $('.nav-menu').on('click', function() {
-        $('#nav-item').toggleClass('active-menu');
+    $('.main-nav_burger').on('click', function() {
+        $('#nav-item').toggleClass('main-nav_active-list');
     });
 }
 clickMobileMenu();
