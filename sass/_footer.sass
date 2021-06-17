@@ -1,0 +1,71 @@
+.footer
+  &_polices
+    background-color: #393939
+
+  &_polices-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 1062px
+    margin: 0 auto
+    padding: 0 30px
+    box-sizing: border-box
+    height: 52px
+
+    @media (max-width: 768px)
+      height: 100%
+      display: block
+      padding: 0
+
+  &_polices-list
+    display: flex
+    max-width: 500px
+    width: 100%
+    justify-content: flex-start
+
+    @media (max-width: 768px)
+      display: block
+      max-width: 100%
+
+  &_polices-link
+    color: $link-panel-color
+    font-family: $font-Norman
+    font-size: 13px
+    font-weight: bold
+    margin: 0 20px 0 0
+    cursor: pointer
+    &:hover
+      color: $hover-color
+      transition: 0.3s
+
+    @media (max-width: 768px)
+      margin: 0 auto
+      display: flex
+      justify-content: center
+      height: 50px
+      align-items: center
+      border-bottom: 1px solid #6d6d6d
+      &:hover
+        background-color: #646464
+        transition: 0.3s
+
+  &_polices-description
+    max-width: 217px
+    width: 100%
+    display: flex
+    justify-content: space-between
+
+    @media (max-width: 768px)
+      max-width: 100%
+      justify-content: center
+      height: 50px
+      align-items: center
+
+  &_description
+    color: #ababab
+    font-size: 12px
+    font-family: $font-Norman
+
+    @media (max-width: 768px)
+      margin: 0 20px 0 0
+
