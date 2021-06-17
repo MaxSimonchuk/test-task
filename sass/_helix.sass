@@ -3,9 +3,15 @@
   display: flex
   justify-content: space-between
 
+  @media (max-width: 768px)
+    display: block
+
   &_content
     max-width: 372px
     width: 100%
+
+    @media (max-width: 768px)
+      max-width: 100%
 
   &_logo-wrapper
     width: 100%
@@ -23,7 +29,7 @@
   &_input-email
     padding: 15px 42px 15px 18px
     box-sizing: border-box
-    border-left : 1px solid $link-panel-color
+    border-left: 1px solid $link-panel-color
     border-top: 1px solid $link-panel-color
     border-bottom: 1px solid $link-panel-color
     border-top-left-radius: 3px
@@ -32,6 +38,9 @@
     font-size: 14px
     font-family: $font-Norman
     color: $link-panel-color
+
+    @media (max-width: 826px)
+      padding: 15px 18px
 
   &_button
     padding: 16px 44px 15px
@@ -49,6 +58,9 @@
       font-weight:
       transition: 0.3s
       color: $white-color
+
+    @media (max-width: 826px)
+      padding: 16px 32px 15px
 
   &_social-link
     display: flex
@@ -77,6 +89,9 @@
     font-family: $font-Norman
     color: #ababab
     line-height: 1.33
+
+    @media (max-width: 768px)
+      display: none
 
   &_lists
     max-width: 375px
