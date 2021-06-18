@@ -49,3 +49,19 @@ function clickMobileMenu() {
     });
 }
 clickMobileMenu();
+
+function clickHelixRows() {
+    $('#switch-get').on('click', function() {
+        $('#switch-list-get').toggleClass('helix_active-list');
+    });
+    $('#switch-helix').on('click', function() {
+        $('#switch-list-helix').toggleClass('helix_active-list');
+    });
+    $('#switch-support').on('click', function() {
+        $('#switch-list-support').toggleClass('helix_active-list');
+    });
+}
+clickHelixRows();
+
+
+
