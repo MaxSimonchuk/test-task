@@ -3,6 +3,10 @@
   padding: 61px 30px 112px
   border-bottom: 1px solid #d7d7d7
 
+  &_tabs
+    display: flex
+    justify-content: space-between
+
   &_title
     font-size: 34px
     font-weight: bold
@@ -20,18 +24,11 @@
     height: 86px
     margin: 0 auto 47px
 
-  &_panel
-    max-width: 955px
-    width: 100%
-    margin: 0 auto
-    display: flex
-    justify-content: space-between
-
   &_panel-item-content
     width: 100%
     max-width: 372px
 
-  &_panel-item-title-arrow
+  &_panel-item-switch
     display: flex
     justify-content: space-between
     align-items: center
@@ -40,56 +37,28 @@
   &_panel-item-title
     font-size: 20px
     font-weight: bold
-    color: $link-panel-color
+    color: $future-title
     cursor: pointer
+    max-width: 372px
+    width: 100%
 
   &_arrow-image
     width: 14px
     height: 8px
+    transform: rotate(180deg)
 
-  &_item-description
+  &_arrow-image-active
+    transform: rotate(0deg)
+
+  &_item-description-wrapper
     width: 100%
     max-width: 365px
-    height: 250px
+    height: 230px
     margin: 0 auto 35px
     border-bottom: 1px solid #d7d7d7
 
-  &_image-wrapper
+  &_image
     width: 100%
     max-width: 467px
     height: 428px
     box-shadow: 0 0 44px 10px #dedede
-
-
-
-.acordeon
-  max-width: 400px
-  background: white
-  margin: 0 auto
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)
-
-
-.acordeon-cabecera
-  border-bottom: 1px solid #DDE0E7
-  color: #222222
-  cursor: pointer
-  font-weight: 600
-  padding: 1.5rem
-  background: #f6f7f9
-
-
-.acordeon-cabecera:hover
-  background: #fdf8d7
-
-
-.acordeon-cabecera.active
-  background-color: #fdf8d7
-
-
-.acordeon-contenido
-  display: none
-  border-bottom: 1px solid #DDE0E7
-  background: #fff
-  padding: 1.4rem
-  color: #4a5666
-
