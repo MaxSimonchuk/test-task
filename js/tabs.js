@@ -10,7 +10,7 @@ $(window).on('load', function() {
         $('#future-panels .future_item-description-wrapper').attr('hidden', true);
         $(`#future-panels [data-future-panel-index="${panelIndex}"]`).attr('hidden', false);
 
-        $('.future_image-wrapper-mobile .future_image-wrapper').attr('hidden', true);
+        $('.future_image-wrapper-mobile .future_image-mobile').attr('hidden', true);
         $(`.future_image-wrapper-mobile [data-future-image-index="${panelIndex}"]`).attr('hidden', false);
     });
 
